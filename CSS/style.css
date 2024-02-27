@@ -1,0 +1,19 @@
+body {
+    background: #e6e6e6;
+}
+.Button-Back{
+    float:right;
+    margin-right: 3%;
+    width: 50px;
+}
+
+.example {
+    width: 100vw;
+    height: 50px;
+    position: relative;
+    img {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
