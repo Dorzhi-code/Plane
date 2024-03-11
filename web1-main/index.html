@@ -4,107 +4,107 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Самолёты</title>
-    <link rel="stylesheet" href="/./CSS/style.css">
-    <style>
-      .filters_img {
-        display: block;
-        width: 30%;
-        height: 30%;
-        margin-left: auto;
-        margin-right: auto;
-      }
-    </style>
+    <link rel="stylesheet" href="/./CSS/style.css">    
   </head>
   <body>
-    <h1>
-      Самолёт — класс воздушных судов тяжелее воздуха, предназначенных для
-      полётов в атмосфере с помощью силового агрегата, создающего тягу и
-      неподвижного относительно других частей аппарата крыла, создающего
-      подъёмную силу.
-    </h1>
-    <p></p>
-    <table border>
-      <thead>
-        <tr>
-          <th>Номер</th>
-          <th>Название</th>
-          <th>Изображение</th>
-          <th>Тип</th>
-        </tr>
-      </thead>
-      <tbody class="Center">
-        <tr>
-          <td>1</td>
-          <td><a href="./pages/Subsonic/Ан-74.html">Ан-74</a></td>          
-          <td><img class="filters_img" src="../img/plane/1.png" alt="Ан-74" /></td>
-          <td><a href="./pages/Subsonic/Subsonic.html">Дозвуковой</a></td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td><a href="./pages/Subsonic/Douglas DC-3.html">Douglas DC-3</a></td>
-          <td>
-            <img class="filters_img" src="../img/plane/2.png" alt="Douglas DC-3" />
-          </td>
-          <td><a href="./pages/Subsonic/Subsonic.html">Дозвуковой</a></td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td><a href="./pages/Transonic/Ту-154.html">Ту-154</a></td>
-          <td><img class="filters_img" src="../img/plane/3.png" alt="Ту-154" /></td>
-          <td><a href="./pages/Transonic/Transonic.html">Околозвуковые</a></td>
-        </tr>
-        <tr>
-          <td>4</td>
-          <td><a href="./pages/Supersonic/Ту-22М.html">Ту-22М</a></td>
-          <td><img class="filters_img" src="../img/plane/4.png" alt="Ту-22М" /></td>
-          <td><a href="./pages/Supersonic/Supersonic.html">Сверхзвуковые</a></td>
-        </tr>
-        <tr>
-          <td>5</td>
-          <td><a href="./pages/Supersonic/Конкорд.html">Конкорд</a></td>
-          <td><img class="filters_img" src="../img/plane/5.png" alt="Конкорд" /></td>
-          <td><a href="./pages/Supersonic/Supersonic.html">Сверхзвуковые</a></td>
-        </tr>
-        <tr>
-          <td>6</td>
-          <td><a href="./pages/Hypersonic/X-15.html">X-15</a></td>
-          <td><img class="filters_img" src="../img/plane/6.png" alt="X-15" /></td>
-          <td><a href="./pages/Hypersonic/Hypersonic.html">Гиперзвуковые</a></td>
-        </tr>
-        <tr>
-          <td>7</td>
-          <td><a href="./pages/Subsonic/М-17.html">М-17</a></td>
-          <td><img class="filters_img" src="../img/plane/7.png" alt="М-17" /></td>
-          <td><a href="./pages/Subsonic/Subsonic.html">Дозвуковой</a></td>
-        </tr>
-        <tr>
-          <td>8</td>
-          <td><a href="./pages/Supersonic/X-59.html">Lockheed Martin X-59 QueSST</a></td>
-          <td><img class="filters_img" src="../img/plane/8.png" alt="X-59" /></td>
-          <td><a href="./pages/Supersonic/Supersonic.html">Сверхзвуковые</a></td>
-        </tr>
-        <tr>
-          <td>9</td>
-          <td><a href="./pages/Supersonic/Ту-144.html"> Ту-144</a></td>
-          
-          <td><img class="filters_img" src="../img/plane/9.png" alt="Ту-144" /></td>
-          <td><a href="./pages/Supersonic/Supersonic.html">Сверхзвуковые</a></td>
-        </tr>
-        <tr>
-          <td>10</td>
-          <td><a href="./pages/Hypersonic/SpaceShipOne.html">SpaceShipOne</a></td>          
-          <td>
-            <img class="filters_img" src="../img/plane/10.png" alt="SpaceShipOne" />
-          </td>
-          <td><a href="./pages/Hypersonic/Hypersonic.html">Гиперзвуковые</a></td>
-        </tr>
-      </tbody>
-    </table>
-    <p id="copyright"></p>
-    <script>
-      const dt = new Date();
-      let d = dt.getFullYear();
-      document.getElementById("copyright").innerHTML = `&copy; ${d} ООО &laquo;Самолёты&raquo;. Все права защищены`;
-    </script>
+    <div class="wrapper">
+      <div class="header">
+        <h1>
+          Самолёт — класс воздушных судов тяжелее воздуха, предназначенных для
+          полётов в атмосфере с помощью силового агрегата, создающего тягу и
+          неподвижного относительно других частей аппарата крыла, создающего
+          подъёмную силу.
+        </h1>
+      </div>
+      <div class="main">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Номер</th>
+              <th>Название</th>
+              <th>Изображение</th>
+              <th>Тип</th>
+            </tr>
+          </thead>
+          <tbody class="Center">
+            <tr>
+              <td>1</td>
+              <td><a href="./pages/Subsonic/Ан-74.html">Ан-74</a></td>          
+              <td><img class="filters_img" src="../img/plane/1.png" alt="Ан-74" /></td>
+              <td><a href="./pages/Subsonic/Subsonic.html">Дозвуковой</a></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td><a href="./pages/Subsonic/Douglas DC-3.html">Douglas DC-3</a></td>
+              <td>
+                <img class="filters_img" src="../img/plane/2.png" alt="Douglas DC-3" />
+              </td>
+              <td><a href="./pages/Subsonic/Subsonic.html">Дозвуковой</a></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td><a href="./pages/Transonic/Ту-154.html">Ту-154</a></td>
+              <td><img class="filters_img" src="../img/plane/3.png" alt="Ту-154" /></td>
+              <td><a href="./pages/Transonic/Transonic.html">Околозвуковые</a></td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td><a href="./pages/Supersonic/Ту-22М.html">Ту-22М</a></td>
+              <td><img class="filters_img" src="../img/plane/4.png" alt="Ту-22М" /></td>
+              <td><a href="./pages/Supersonic/Supersonic.html">Сверхзвуковые</a></td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td><a href="./pages/Supersonic/Конкорд.html">Конкорд</a></td>
+              <td><img class="filters_img" src="../img/plane/5.png" alt="Конкорд" /></td>
+              <td><a href="./pages/Supersonic/Supersonic.html">Сверхзвуковые</a></td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td><a href="./pages/Hypersonic/X-15.html">X-15</a></td>
+              <td><img class="filters_img" src="../img/plane/6.png" alt="X-15" /></td>
+              <td><a href="./pages/Hypersonic/Hypersonic.html">Гиперзвуковые</a></td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td><a href="./pages/Subsonic/М-17.html">М-17</a></td>
+              <td><img class="filters_img" src="../img/plane/7.png" alt="М-17" /></td>
+              <td><a href="./pages/Subsonic/Subsonic.html">Дозвуковой</a></td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td><a href="./pages/Supersonic/X-59.html">Lockheed Martin X-59 QueSST</a></td>
+              <td><img class="filters_img" src="../img/plane/8.png" alt="X-59" /></td>
+              <td><a href="./pages/Supersonic/Supersonic.html">Сверхзвуковые</a></td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td><a href="./pages/Supersonic/Ту-144.html"> Ту-144</a></td>
+              
+              <td><img class="filters_img" src="../img/plane/9.png" alt="Ту-144" /></td>
+              <td><a href="./pages/Supersonic/Supersonic.html">Сверхзвуковые</a></td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td><a href="./pages/Hypersonic/SpaceShipOne.html">SpaceShipOne</a></td>          
+              <td>
+                <img class="filters_img" src="../img/plane/10.png" alt="SpaceShipOne" />
+              </td>
+              <td><a href="./pages/Hypersonic/Hypersonic.html">Гиперзвуковые</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="footer">
+        <p id="copyright"></p>
+        <script>
+          const dt = new Date();
+          let d = dt.getFullYear();
+          document.getElementById("copyright").innerHTML = `&copy; ${d} ООО &laquo;Самолёты&raquo;. Все права защищены`;
+        </script>
+      </div>
+      
+      
+    </div>
   </body>
 </html>

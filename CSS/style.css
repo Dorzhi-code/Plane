@@ -1,14 +1,27 @@
-body {
-    background: #e6e6e6;
+root {
+    --color: purple;
+}
+
+
+.main{
+    background: #fffafa
+}
+body{
+	background-color: #e6e6e6;
     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
 }
+
+.wrapper {
+    margin: 20px 150px;
+}
+
 .Button-Back{
     float: right;
     margin-right: 3%;
     width: 50px;
 }
 .example {
-    width: 100vw;
+    width: 100%;
     height: 50px;
     position: relative;
     img {
@@ -24,17 +37,11 @@ a {
     max-width: 5px;
 }
 
-div {
-    text-align: center;
-}
-
 .ImgCenter{
-    margin: auto ;
-    display: block;
-}
-
-h1 {
-    text-align: center;
+    
+    height: 100%;
+    width: 100%;    
+    object-fit: cover;
 }
 
 p {
@@ -45,31 +52,60 @@ p {
     margin-bottom: 10px;
 }
 
-table {
-    table-layout: fixed;
-    width: 100%;
-    border-collapse: collapse;
-    border: 3px solid purple;
+.table {
+	width: 100%;
+	margin-bottom: 20px;
+	border: 1px solid purple;
+	border-collapse: collapse; 
+}
+.table th {
+	font-weight: bold;
+	padding: 5px;
+	background: #efefef;
+	border: 1px solid purple;
+}
+.table td {
+	border: 1px solid purple;
+	padding: 5px;
+}
+.table tr:hover{
+    transition: all .5s ease-in-out;
+	background-color: #ADD8E6;
 }
 
-thead th:nth-child(1) {
-    width: 10%;
+li{
+    font-style: italic;
 }
 
-thead th:nth-child(2) {
-    width: 10%;
+.header{
+	background-color: #ea7575;
+	text-align:center;
 }
-    
-thead th:nth-child(3) {
-    width: 45%;
-}
-
-thead th:nth-child(4) {
-    width: 35%;
+.header>h1{	
+	padding-left: 10;
+	display: inline;
+	font-size: 55;
 }
 
-th,
-td {
-    padding: 20px;
+.footer{
+    background-color: #ea7575;
+	text-align:center; 
+    vertical-align: middle;
+    height: 40px;
 }
 
+.filters_img {
+    display: block;
+    width: 30%;
+    height: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.left_part{
+    float: left;
+    width: 30%;
+}
+
+.right_part{
+    margin-left: 30%;
+}
