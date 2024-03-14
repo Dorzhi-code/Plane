@@ -1,14 +1,12 @@
-root {
-    --color: purple;
-}
-
-
+@import "variables.css";
 .main{
-    background: #fffafa
+    background: var(--main-color)
 }
+
 body{
-	background-color: #e6e6e6;
+	background-color: var(--main-color);
     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    color: white;
 }
 
 .wrapper {
@@ -20,6 +18,7 @@ body{
     margin-right: 3%;
     width: 50px;
 }
+
 .example {
     width: 100%;
     height: 50px;
@@ -33,8 +32,8 @@ body{
 
 a {
     text-decoration: none;
-    color:#351392;
-    max-width: 5px;
+    color:#000000;
+    max-width: 5px; 
 }
 
 .ImgCenter{
@@ -55,17 +54,17 @@ p {
 .table {
 	width: 100%;
 	margin-bottom: 20px;
-	border: 1px solid purple;
+	border: 1px solid white;
 	border-collapse: collapse; 
 }
 .table th {
 	font-weight: bold;
 	padding: 5px;
-	background: #efefef;
-	border: 1px solid purple;
+	background: var(--main-color);
+	border: 1px solid white;
 }
 .table td {
-	border: 1px solid purple;
+	border: 1px solid white;
 	padding: 5px;
 }
 .table tr:hover{
@@ -78,7 +77,7 @@ li{
 }
 
 .header{
-	background-color: #ea7575;
+	/* background-color: #ea7575; */
 	text-align:center;
 }
 .header>h1{	
@@ -88,7 +87,7 @@ li{
 }
 
 .footer{
-    background-color: #ea7575;
+    /* background-color: #ea7575; */
 	text-align:center; 
     vertical-align: middle;
     height: 40px;
