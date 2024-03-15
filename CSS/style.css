@@ -1,110 +1,110 @@
 @import "variables.css";
-.main{
-    background: var(--main-color)
+.main {
+  background: var(--main-color);
 }
 
-body{
-	background-color: var(--main-color);
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
-    color: white;
+body {
+  background-color: var(--main-color);
+  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
+    sans-serif;
+  color: white;
 }
 
 .wrapper {
-    margin: 20px 150px;
+  margin: 20px 150px;
 }
 
-.Button-Back{
-    float: right;
-    margin-right: 3%;
-    width: 50px;
+.Button-Back {
+  float: right;
+  margin-right: 3%;
+  width: 50px;
 }
 
 .example {
-    width: 100%;
-    height: 50px;
-    position: relative;
-    img {
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
+  width: 100%;
+  height: 50px;
+  position: relative;
+  img {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
 }
 
 a {
-    text-decoration: none;
-    color:#000000;
-    max-width: 5px; 
+  text-decoration: none;
+  color: #000000;
+  max-width: 5px;
 }
 
-.ImgCenter{
-    
-    height: 100%;
-    width: 100%;    
-    object-fit: cover;
+.ImgCenter {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 p {
-    text-align: center;
+  text-align: center;
 }
 
 .Link {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .table {
-	width: 100%;
-	margin-bottom: 20px;
-	border: 1px solid white;
-	border-collapse: collapse; 
+  width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid white;
+  border-collapse: collapse;
 }
 .table th {
-	font-weight: bold;
-	padding: 5px;
-	background: var(--main-color);
-	border: 1px solid white;
+  font-weight: bold;
+  padding: 5px;
+  background: var(--main-color);
+  border: 1px solid white;
 }
 .table td {
-	border: 1px solid white;
-	padding: 5px;
+  border: 1px solid white;
+  padding: 5px;
 }
-.table tr:hover{
-    transition: all .5s ease-in-out;
-	background-color: #ADD8E6;
-}
-
-li{
-    font-style: italic;
+.table tr:hover {
+  transition: all 0.5s ease-in-out;
+  background-color: #add8e6;
 }
 
-.header{
-	/* background-color: #ea7575; */
-	text-align:center;
-}
-.header>h1{	
-	padding-left: 10;
-	display: inline;
-	font-size: 55;
+li {
+  font-style: italic;
 }
 
-.footer{
-    /* background-color: #ea7575; */
-	text-align:center; 
-    vertical-align: middle;
-    height: 40px;
+.header {
+  /* background-color: #ea7575; */
+  text-align: center;
+}
+.header > h1 {
+  padding-bottom: 10;
+  display: inline;
+  font-size: 55;
+}
+
+.footer {
+  /* background-color: #ea7575; */
+  text-align: center;
+  vertical-align: middle;
+  height: 40px;
 }
 
 .filters_img {
-    display: block;
-    width: 30%;
-    height: 30%;
-    margin-left: auto;
-    margin-right: auto;
+  display: block;
+  width: 30%;
+  height: 30%;
+  margin-left: auto;
+  margin-right: auto;
 }
-.left_part{
-    float: left;
-    width: 30%;
+.left_part {
+  float: left;
+  width: 30%;
 }
 
-.right_part{
-    margin-left: 30%;
+.right_part {
+  margin-left: 30%;
 }

@@ -4,17 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Гиперзвуковые</title>
-    <link rel="stylesheet" href="/./CSS/style.css">
+    <link rel="stylesheet" href="/./CSS/style.css" />
   </head>
   <body>
-    <h1>Гиперзвуковые</h1>
-    <img class="ImgCenter" src="/./img/plane/6.png" alt="X-15" />
-    <img class="ImgCenter" src="/./img/plane/10.png" alt="SpaceShipOne" />
-    <p>Гиперзвуковые - максимальное полётное число Маха свыше 5.</p>
-    <div class="example">
-      <a href="/web1-main/index.html"><img class="Button-Back" src="/./img/icons/back.jpg" alt="Back">        
-      </a>
+    <div class="wrapper">
+      <div class="header">
+        <div>
+          <h1>Гиперзвуковые</h1>
+        </div>
+      </div>
+      <div class="main">
+        <img class="ImgCenter" src="/./img/plane/6.png" alt="X-15" />
+        <img class="ImgCenter" src="/./img/plane/10.png" alt="SpaceShipOne" />
+        <p>Гиперзвуковые - максимальное полётное число Маха свыше 5.</p>
+        <div class="example">
+          <a href="/web1-main/index.html"
+            ><img class="Button-Back" src="/./img/icons/back.jpg" alt="Back" />
+          </a>
+        </div>
+      </div>
+      <div class="footer">
+        <p id="copyright"></p>
+        <script>
+          const dt = new Date();
+          let d = dt.getFullYear();
+          document.getElementById(
+            "copyright"
+          ).innerHTML = `&copy; ${d} ООО &laquo;Самолёты&raquo;. Все права защищены`;
+        </script>
+      </div>
     </div>
-    
   </body>
 </html>
