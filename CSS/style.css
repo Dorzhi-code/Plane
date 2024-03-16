@@ -1,13 +1,21 @@
 @import "variables.css";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
 .main {
   background: var(--main-color);
 }
 
+a {
+  font-style: italic;
+}
+
 body {
   background-color: var(--main-color);
-  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
-    sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
   color: white;
+  box-sizing: border-box;
+  margin: 0 auto;
 }
 
 .wrapper {
@@ -33,18 +41,15 @@ body {
 
 a {
   text-decoration: none;
-  color: #000000;
+  color: white;
   max-width: 5px;
+  text-decoration: underline;
 }
 
 .ImgCenter {
-  height: 100%;
   width: 100%;
-  object-fit: cover;
-}
-
-p {
-  text-align: center;
+  height: 100%;
+  object-fit: contain;
 }
 
 .Link {
@@ -56,6 +61,15 @@ p {
   margin-bottom: 20px;
   border: 1px solid white;
   border-collapse: collapse;
+
+  .table__titles {
+    font-size: 20px;
+  }
+
+  .Center > tr > td:first-child,
+  .Center > tr > td:last-child {
+    text-align: center;
+  }
 }
 .table th {
   font-weight: bold;
@@ -79,11 +93,10 @@ li {
 .header {
   /* background-color: #ea7575; */
   text-align: center;
+  margin-bottom: 30px;
 }
 .header > h1 {
-  padding-bottom: 10;
-  display: inline;
-  font-size: 55;
+  font-size: 55px;
 }
 
 .footer {
@@ -91,6 +104,7 @@ li {
   text-align: center;
   vertical-align: middle;
   height: 40px;
+  color: #ffe1cb;
 }
 
 .filters_img {
@@ -100,11 +114,23 @@ li {
   margin-left: auto;
   margin-right: auto;
 }
+
+.container {
+  display: flex;
+
+  width: 100%;
+  height: 100%;
+}
+
+.block__liter {
+  color: #ffe1cb;
+}
+
 .left_part {
-  float: left;
-  width: 30%;
+  height: 100%;
+  min-width: 50%;
 }
 
 .right_part {
-  margin-left: 30%;
+  margin-left: 50px;
 }
