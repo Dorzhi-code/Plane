@@ -1,25 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Добавление</title>
-    <script></script>
-</head>
-<body>
-    <h1>Добавление самолета</h1>
-    <select name="Type" id="1">
-        <option value="Subsonic">Дозвуковые</option>
-        <option value="Transonic">Околозвуковые</option>
-        <option value="Supersonic">Сверхзвуковые</option>
-        <option value="Hypersonic">Гиперзвуковые</option>
-    </select>
-    
-    <input style="display: block" type="text" name="Name" placeholder="Введите имя" id="Name">
-    <input style="display: block" type="text" name="Description" id="Description" placeholder="Введите описание">
-    <input style="display: block" type="text" name="Guide" id="Справочник" placeholder="Введите справочник">
-    <p style="display: inline">Загрузить фотографию</p> 
-    <input type="file" name="Image" id="Image">
-    <input style="display: block" type="submit">
-</body>
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <!-- <link rel="stylesheet" href="/JS/adding.js" /> -->
+    <script>
+      function clear() {
+        alert("Очистил!");
+        console.log("Очистил");
+      }
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <h1>Добавление самолета</h1>
+      </div>
+      <div class="main">
+        <div class="form" id="form">
+          <h2>Название</h2>
+          <input
+            class="text_name"
+            type="text"
+            placeholder="Введите имя"
+            id="Name"
+          />
+          <h2>Тип</h2>
+          <select name="Type" id="1">
+            <option value="Subsonic">Дозвуковые</option>
+            <option value="Transonic">Околозвуковые</option>
+            <option value="Supersonic">Сверхзвуковые</option>
+            <option value="Hypersonic">Гиперзвуковые</option>
+          </select>
+          <h2>Описание</h2>
+          <textarea
+            name="Desctiption"
+            class="text_description"
+            placeholder="Введите описание"
+            cols="100"
+            rows="10"
+          ></textarea>
+          <h2>Фотография</h2>
+          <p style="display: inline">Загрузить фотографию</p>
+          <input type="file" name="Image" id="Image" />
+          <hr />
+          <input
+            type="button"
+            value="Сохранить"
+            class="gradient-button"
+            onclick="process()"
+          />
+          <input
+            type="button"
+            value="Очистить"
+            class="gradient-button"
+            onclick="clear()"
+          />
+        </div>
+        <div id="process" class="outblock"></div>
+      </div>
+
+      <div class="footer">
+        <p id="copyright"></p>
+        <script>
+          const dt = new Date();
+          let d = dt.getFullYear();
+          document.getElementById(
+            "copyright"
+          ).innerHTML = `&copy; ${d} ООО &laquo;Самолёты&raquo;. Все права защищены`;
+        </script>
+      </div>
+    </div>
+  </body>
 </html>

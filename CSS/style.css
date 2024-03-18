@@ -52,8 +52,9 @@ a {
   object-fit: contain;
 }
 
-.Link {
-  margin-bottom: 10px;
+.Link p {
+  font-weight: 800;
+  display: inline;
 }
 
 .table {
@@ -91,7 +92,6 @@ li {
 }
 
 .header {
-  /* background-color: #ea7575; */
   text-align: center;
   margin-bottom: 30px;
 }
@@ -100,7 +100,6 @@ li {
 }
 
 .footer {
-  /* background-color: #ea7575; */
   text-align: center;
   vertical-align: middle;
   height: 40px;
@@ -124,6 +123,10 @@ li {
 
 .block__liter {
   color: #ffe1cb;
+  p {
+    font-size: 18px;
+    font-weight: 600;
+  }
 }
 
 .left_part {
@@ -133,4 +136,62 @@ li {
 
 .right_part {
   margin-left: 50px;
+}
+
+.text_name {
+  display: block;
+  width: 25rem;
+  height: 4 rem;
+  padding: 0.375rem 0.75rem;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #bdbdbd;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.text_description {
+  display: block;
+  width: 38rem;
+  height: 10rem;
+  padding: 0.375rem 0.75rem;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #bdbdbd;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.gradient-button {
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  padding: 10px 20px;
+  margin: 5px 10px;
+  border-radius: 10px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-image: linear-gradient(
+    to right,
+    #dae636 0%,
+    #ef491b 51%,
+    #d0ef24 100%
+  );
+  background-size: 200% auto;
+  /* box-shadow: 0 0 20px rgba(0, 0, 0, .1); */
+  transition: 0.5s;
+}
+.gradient-button:hover {
+  background-position: right center;
 }
