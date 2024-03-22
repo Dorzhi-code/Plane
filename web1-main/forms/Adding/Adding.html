@@ -7,10 +7,6 @@
     <link rel="stylesheet" href="/CSS/style.css" />
     <!-- <link rel="stylesheet" href="/JS/adding.js" /> -->
     <script>
-      function clear() {
-        alert("Очистил!");
-        console.log("Очистил");
-      }
       function process() {
         let smth = document.getElementById("process");
         var div = document.createElement("div");
@@ -32,6 +28,11 @@
         div.innerHTML += "<b>Описание: </b><br>" + Desctiption + "<br>";
         div.innerHTML += "<br><br>";
         smth.appendChild(div);
+      }
+
+      function clean() {
+        alert("Clear!");
+        document.getElementById("process").innerHTML = "";
       }
     </script>
   </head>
@@ -80,7 +81,7 @@
             type="button"
             value="Очистить"
             class="gradient-button"
-            onclick="clear()"
+            onclick="clean()"
           />
         </div>
         <div id="process"></div>
