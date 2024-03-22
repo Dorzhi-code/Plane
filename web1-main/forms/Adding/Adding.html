@@ -11,6 +11,28 @@
         alert("Очистил!");
         console.log("Очистил");
       }
+      function process() {
+        let smth = document.getElementById("process");
+        var div = document.createElement("div");
+        var plane_name = document.getElementById("Name").value;
+        div.innerHTML = "<b> Название самолета: </b><br>" + plane_name + "<br>";
+        var Type = document.getElementById("Type").value;
+        var plane_type = "";
+        if (Type == 1) {
+          plane_type = "Дозвуковые";
+        } else if (Type == 2) {
+          plane_type = "Околозвуковые";
+        } else if (Type == 3) {
+          plane_type = "Сверхзвуковые";
+        } else if (Type == 4) {
+          plane_type = "Гиперзвуковые";
+        }
+        div.innerHTML += "<b>Тип самолета: </b><br>" + plane_type + "<br>";
+        var Desctiption = document.getElementById("Desctiption").value;
+        div.innerHTML += "<b>Описание: </b><br>" + Desctiption + "<br>";
+        div.innerHTML += "<br><br>";
+        smth.appendChild(div);
+      }
     </script>
   </head>
   <body>
@@ -20,6 +42,7 @@
       </div>
       <div class="main">
         <div class="form" id="form">
+          <form name="new_plane"></form>
           <h2>Название</h2>
           <input
             class="text_name"
@@ -28,11 +51,11 @@
             id="Name"
           />
           <h2>Тип</h2>
-          <select name="Type" id="1">
-            <option value="Subsonic">Дозвуковые</option>
-            <option value="Transonic">Околозвуковые</option>
-            <option value="Supersonic">Сверхзвуковые</option>
-            <option value="Hypersonic">Гиперзвуковые</option>
+          <select name="Type" id="Type">
+            <option value="1">Дозвуковые</option>
+            <option value="2">Околозвуковые</option>
+            <option value="3">Сверхзвуковые</option>
+            <option value="4">Гиперзвуковые</option>
           </select>
           <h2>Описание</h2>
           <textarea
@@ -41,6 +64,7 @@
             placeholder="Введите описание"
             cols="100"
             rows="10"
+            id="Desctiption"
           ></textarea>
           <h2>Фотография</h2>
           <p style="display: inline">Загрузить фотографию</p>
@@ -59,7 +83,7 @@
             onclick="clear()"
           />
         </div>
-        <div id="process" class="outblock"></div>
+        <div id="process"></div>
       </div>
 
       <div class="footer">
