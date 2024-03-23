@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Добавление</title>
     <link rel="stylesheet" href="/CSS/style.css" />
-    <!-- <link rel="stylesheet" href="/JS/adding.js" /> -->
     <script>
+      var cnt = 1;
       function process() {
-        let smth = document.getElementById("process");
+        var smth = document.getElementById("process");
+        smth.classList.add("form_process");
         var div = document.createElement("div");
         var plane_name = document.getElementById("Name").value;
-        div.innerHTML = "<b> Название самолета: </b><br>" + plane_name + "<br>";
+        div.innerHTML =
+          cnt + "." + "<b> Название самолета: </b><br>" + plane_name + "<br>";
+        cnt++;
         var Type = document.getElementById("Type").value;
         var plane_type = "";
         if (Type == 1) {
@@ -31,15 +34,23 @@
       }
 
       function clean() {
-        alert("Clear!");
-        document.getElementById("process").innerHTML = "";
+        cnt = 1;
+        smth = document.getElementById("process");
+        smth.innerHTML = "";
+        smth.classList.remove("form_process");
       }
     </script>
   </head>
   <body>
     <div class="wrapper">
       <div class="header">
-        <h1>Добавление самолета</h1>
+        <h1>
+          <img
+            src="/img/icons/plane.svg"
+            alt="plane_icon"
+            height="45"
+          />Добавление самолета
+        </h1>
       </div>
       <div class="main">
         <div class="form" id="form">

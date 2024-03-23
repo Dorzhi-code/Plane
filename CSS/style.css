@@ -37,6 +37,10 @@ body {
     top: 0;
     right: 0;
   }
+  img,
+  a {
+    border: 0 !important;
+  }
 }
 
 a {
@@ -194,4 +198,16 @@ li {
 }
 .gradient-button:hover {
   background-position: right center;
+}
+
+.left_part img,
+.main img {
+  border: 3px solid #212529;
+}
+
+.form_process {
+  border: 3px solid #fff;
+  border-radius: 20px;
+  padding-left: 30px;
+  padding-top: 20px;
 }
