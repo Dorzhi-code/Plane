@@ -1,8 +1,23 @@
 @import "variables.css";
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@font-face {
+  font-family: "RoustySans";
+  src: format("ttf") url(/font/RoustySans.ttf);
+}
+
+.index {
+  display: flex;
+  align-items: center;
+}
 
 .main {
-  background: var(--main-color);
+}
+.first,
+.second {
+  text-align: center;
+  padding: 20px;
+}
+.first {
+  flex-basis: 25%;
 }
 
 a {
@@ -11,7 +26,7 @@ a {
 
 body {
   background-color: var(--main-color);
-  font-family: "Montserrat", sans-serif;
+  font-family: "RoustySans", sans-serif;
   font-weight: 400;
   color: white;
   box-sizing: border-box;
@@ -19,7 +34,7 @@ body {
 }
 
 .wrapper {
-  margin: 20px 150px;
+  margin: 30px 50px;
 }
 
 .Button-Back {
@@ -101,6 +116,7 @@ li {
 }
 .header > h1 {
   font-size: 55px;
+  font-family: "RoustySans", sans-serif;
 }
 
 .footer {
@@ -196,6 +212,7 @@ li {
   /* box-shadow: 0 0 20px rgba(0, 0, 0, .1); */
   transition: 0.5s;
 }
+
 .gradient-button:hover {
   background-position: right center;
 }
