@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SpaceShipOne</title>
-    <link rel="stylesheet" href="/./CSS/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
     <link
       rel="shortcut icon"
       href="/img/icons/36c8fb9a-07c9-4691-87bc-c4dfeb1b0512-transformed.jpeg"
@@ -12,70 +17,119 @@
     />
   </head>
   <body>
-    <div class="wrapper">
-      <div class="header">
-        <h1>
-          <img
-            src="/img/icons/plane.svg"
-            alt="plane_icon"
-            height="45"
-          />SpaceShipOne
-        </h1>
-        <div class="Link">
-          <p>Тип: <a href="Hypersonic.html"> Гиперзвуковые</a></p>
+    <div class="container-fluid  bg-info">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link active " href="/web1-main/index.html"
+                >Главная страница</a
+              >
+            </li>
+            <li class="nav-item" active>
+              <a
+                class="nav-link active"
+                href="/web1-main/forms/Adding/Adding.html"
+                >Добавление</a
+              >
+            </li>
+          </ul>
+          <!-- <form class="form-inline my-2 my-lg-0">
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+              Search
+            </button> -->
+          </form>
+        </div>
+      </nav>
+    </div>  
+    <header>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-auto">
+            <h1>
+              <img
+                src="/img/icons/plane.svg"
+                alt="plane_icon"
+                height="45"
+              />SpaceShipOne
+            </h1>
+            
+              <p>Тип: <a href="Hypersonic.html"> Гиперзвуковые</a></p>
+            
+          </div>
         </div>
       </div>
+    </header>
+    <main>
+      
       <div class="container">
-        <div class="left_part">
-          <img
+        <div class="row align-items-start">
+          <div class="col">
+            <img
             class="ImgCenter"
             src="/././img/plane/10.png"
             alt="SpaceShipOne"
           />
-        </div>
-        <div class="right_part">
-          <p>
-            SpaceShipOne (трансл. Спэйс Шип Уан; с англ. — «Космический корабль
-            1 (один)») — частный пилотируемый космический корабль многоразового
-            использования, второй в истории[нет в источнике (обс.)]
-            суборбитальный пилотируемый летательный аппарат после North American
-            X-15[1][2][3]. Изготовлен компанией Scaled Composites LLC (США), с
-            1982 года занимающейся производством экспериментальных летательных
-            аппаратов[2]. Одной из целей создания было участие в конкурсе Ansari
-            X Prize, где основным условием являлось создание космического
-            корабля, способного дважды в течение двух недель выйти в космическое
-            пространство с тремя людьми на борту. Победитель должен был получить
-            приз в размере 10 миллионов долларов[1]. Награждение было намечено
-            на начало 2005 года. В результате полётов уже в начале октября 2004
-            года команде создателей SpaceShipOne удалось выиграть этот приз[4].
-          </p>
-          <div class="block__liter">
-            <p>Список литературы:</p>
-            <ol>
-              <li>
-                Учебное пособие для дипломного проектирования по специальности
-                «Самолетостроение»/ Мишин В.Ф., Шаталов И.А., Саморйлович О.С. и
-                др.; Под ред. В.Ф. Мишина. – М.: Изд-во МАИ, 1993. – 100 с.
-              </li>
-              <li>
-                Совенко А.Ю. Потерянная эпоха Ту-144 // Авиация и Время. - 2002.
-                - №4. - С. 4-23.
-              </li>
-              <li>
-                Н. Ю. Косминков, Д. А. Соболев. Самолеты и вертолеты СССР. М.:
-                Российское воздухоплавательное общество, 2007. — 530 с
-              </li>
-            </ol>
           </div>
-
-          <div class="example">
-            <a href="/web1-main/index.html"
-              ><img class="Button-Back" src="/./img/icons/back.svg" alt="Back"
-            /></a>
+          <div class="col">
+            <p style="font-size: 20px; font-weight: 600">Описание:</p>
+            <p>
+              SpaceShipOne (трансл. Спэйс Шип Уан; с англ. — «Космический корабль
+              1 (один)») — частный пилотируемый космический корабль многоразового
+              использования, второй в истории[нет в источнике (обс.)]
+              суборбитальный пилотируемый летательный аппарат после North American
+              X-15[1][2][3]. Изготовлен компанией Scaled Composites LLC (США), с
+              1982 года занимающейся производством экспериментальных летательных
+              аппаратов[2]. Одной из целей создания было участие в конкурсе Ansari
+              X Prize, где основным условием являлось создание космического
+              корабля, способного дважды в течение двух недель выйти в космическое
+              пространство с тремя людьми на борту. Победитель должен был получить
+              приз в размере 10 миллионов долларов[1]. Награждение было намечено
+              на начало 2005 года. В результате полётов уже в начале октября 2004
+              года команде создателей SpaceShipOne удалось выиграть этот приз[4].
+            </p>
           </div>
         </div>
       </div>
-      <div class="footer">
+      <div class="container">
+        <p>Список литературы:</p>
+              <ol>
+                <li>
+                  Учебное пособие для дипломного проектирования по специальности
+                  «Самолетостроение»/ Мишин В.Ф., Шаталов И.А., Саморйлович О.С. и
+                  др.; Под ред. В.Ф. Мишина. – М.: Изд-во МАИ, 1993. – 100 с.
+                </li>
+                <li>
+                  Совенко А.Ю. Потерянная эпоха Ту-144 // Авиация и Время. - 2002.
+                  - №4. - С. 4-23.
+                </li>
+                <li>
+                  Н. Ю. Косминков, Д. А. Соболев. Самолеты и вертолеты СССР. М.:
+                  Российское воздухоплавательное общество, 2007. — 530 с
+                </li>
+              </ol>
+      </div>
+
+    </main>
+    <footer>
+      <div class="container">
         <p id="copyright"></p>
         <script>
           const dt = new Date();
@@ -85,6 +139,6 @@
           ).innerHTML = `&copy; ${d} ООО &laquo;Самолёты&raquo;. Все права защищены`;
         </script>
       </div>
-    </div>
+    </footer>    
   </body>
 </html>

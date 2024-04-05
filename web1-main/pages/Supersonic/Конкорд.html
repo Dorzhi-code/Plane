@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Конкорд</title>
-    <link rel="stylesheet" href="/./CSS/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
     <link
       rel="shortcut icon"
       href="/img/icons/36c8fb9a-07c9-4691-87bc-c4dfeb1b0512-transformed.jpeg"
@@ -12,71 +17,114 @@
     />
   </head>
   <body>
-    <div class="wrapper">
-      <div class="header">
-        <h1>
-          <img src="/img/icons/plane.svg" alt="plane_icon" height="45" />Конкорд
-        </h1>
-        <div class="Link">
-          <p>Тип: <a href="Supersonic.html"> Сверхзвуковые</a></p>
+    <div class="container-fluid  bg-info">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link active " href="/web1-main/index.html"
+                >Главная страница</a
+              >
+            </li>
+            <li class="nav-item" active>
+              <a
+                class="nav-link active"
+                href="/web1-main/forms/Adding/Adding.html"
+                >Добавление</a
+              >
+            </li>
+          </ul>
+          <!-- <form class="form-inline my-2 my-lg-0">
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+              Search
+            </button> -->
+          </form>
+        </div>
+      </nav>
+    </div>  
+    <header>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-auto">
+            <h1>
+              <img src="/img/icons/plane.svg" alt="plane_icon" height="45" />Конкорд
+            </h1>            
+            <p>Тип: <a href="Supersonic.html"> Сверхзвуковые</a></p>
+            
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      
+      <div class="container">
+        <div class="row align-items-start">
+          <div class="col">
+            <img height="500" class="ImgCenter"   src="/./img/plane/5.png" alt="Конкорд" />
+          </div>
+          <div class="col">
+            <p style="font-size: 20px; font-weight: 600">Описание:</p>
+            <p>
+              «Конко́рд» (фр. Concorde, буквально — «согласие») —
+              британо-французский сверхзвуковой пассажирский самолёт (СПС), одна
+              из двух (наряду с Ту-144) моделей гражданских сверхзвуковых
+              самолётов, находившихся в коммерческой эксплуатации. «Конкорд» был
+              создан в результате слияния в 1962 году двух национальных программ
+              разработки сверхзвукового пассажирского авиатранспорта, основными
+              разработчиками самолёта стали компании Sud Aviation с французской
+              стороны и BAC с английской, а двигательные установки Olympus 593
+              были разработаны совместно британской Rolls-Royce и французской
+              SNECMA. Всего было изготовлено 20 самолётов, из которых 9 были
+              проданы авиакомпаниям British Airways и Air France, а ещё 5 переданы
+              этим же авиакомпаниям по символическим ценам 1 фунт стерлингов и 1
+              франк соответственно[2]. Первый полёт прототипа состоялся в 1969
+              году, ввод в коммерческую эксплуатацию произошёл в 1976 году[3].
+            </p>
+          </div>
         </div>
       </div>
       <div class="container">
-        <div class="left_part">
-          <img class="ImgCenter" src="/./img/plane/5.png" alt="Конкорд" />
-        </div>
-        <div class="right_part">
-          <p>
-            «Конко́рд» (фр. Concorde, буквально — «согласие») —
-            британо-французский сверхзвуковой пассажирский самолёт (СПС), одна
-            из двух (наряду с Ту-144) моделей гражданских сверхзвуковых
-            самолётов, находившихся в коммерческой эксплуатации. «Конкорд» был
-            создан в результате слияния в 1962 году двух национальных программ
-            разработки сверхзвукового пассажирского авиатранспорта, основными
-            разработчиками самолёта стали компании Sud Aviation с французской
-            стороны и BAC с английской, а двигательные установки Olympus 593
-            были разработаны совместно британской Rolls-Royce и французской
-            SNECMA. Всего было изготовлено 20 самолётов, из которых 9 были
-            проданы авиакомпаниям British Airways и Air France, а ещё 5 переданы
-            этим же авиакомпаниям по символическим ценам 1 фунт стерлингов и 1
-            франк соответственно[2]. Первый полёт прототипа состоялся в 1969
-            году, ввод в коммерческую эксплуатацию произошёл в 1976 году[3].
-          </p>
-          <div class="block__liter">
-            <p>Список литературы:</p>
-            <ol>
-              <li>
-                Методические разработки по курсовому проектированию
-                «Конструирование агрегатов планера». Назаров Г.Н., Красоткин
-                А.А., Попов Ю.И., -М.:МАИ, 1983.-56 с.
-              </li>
-              <li>
-                Житомирский Г.И. Конструкция самолетов: Учебник для студентов
-                авиационных специальностей вузов. – М.: Машиностроение, 1991. –
-                400 с.
-              </li>
-              <li>
-                Проектирование конструкций самолетов: Учебник для студентов
-                вузов, обучающихся по специальности «Самолетостроение»/ Е.С.
-                Войт, А.И. Ендогур, Э.А. Мелиек-Саркисян, И.М. Алявдин. –
-                М.:-Машиностроение 1987. – 416 с.
-              </li>
-            </ol>
-          </div>
-
-          <div class="example">
-            <a href="/web1-main/index.html"
-              ><img
-                class="Button-Back"
-                src="/./img/icons/back.svg"
-                alt="Back"
-              />
-            </a>
-          </div>
-        </div>
+        <p>Список литературы:</p>
+              <ol>
+                <li>
+                  Методические разработки по курсовому проектированию
+                  «Конструирование агрегатов планера». Назаров Г.Н., Красоткин
+                  А.А., Попов Ю.И., -М.:МАИ, 1983.-56 с.
+                </li>
+                <li>
+                  Житомирский Г.И. Конструкция самолетов: Учебник для студентов
+                  авиационных специальностей вузов. – М.: Машиностроение, 1991. –
+                  400 с.
+                </li>
+                <li>
+                  Проектирование конструкций самолетов: Учебник для студентов
+                  вузов, обучающихся по специальности «Самолетостроение»/ Е.С.
+                  Войт, А.И. Ендогур, Э.А. Мелиек-Саркисян, И.М. Алявдин. –
+                  М.:-Машиностроение 1987. – 416 с.
+                </li>
+              </ol>
       </div>
 
-      <div class="footer">
+    </main>
+    <footer>
+      <div class="container">
         <p id="copyright"></p>
         <script>
           const dt = new Date();
@@ -86,6 +134,6 @@
           ).innerHTML = `&copy; ${d} ООО &laquo;Самолёты&raquo;. Все права защищены`;
         </script>
       </div>
-    </div>
+    </footer>    
   </body>
 </html>
